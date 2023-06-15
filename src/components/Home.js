@@ -20,7 +20,6 @@ function Home() {
 
   const handleAddBook = (book) => {
     book.id = uuid();
-    console.log(book);
     setBooks((prevBooks) => [...prevBooks, book]);
   };
 

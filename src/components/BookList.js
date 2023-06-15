@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const BookList = ({ books, onDelete }) => {
   return (
@@ -14,6 +15,11 @@ const BookList = ({ books, onDelete }) => {
       </ul>
     </div>
   );
+};
+
+BookList.propTypes = {
+  books: PropTypes.array.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 
 export default BookList;

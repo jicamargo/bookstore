@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function BookForm({ onAddBook }) {
   const [title, setTitle] = useState('');
@@ -34,5 +35,10 @@ function BookForm({ onAddBook }) {
     </div>
   );
 }
+
+// add props validation
+BookForm.propTypes = {
+  onAddBook: PropTypes.func.isRequired,
+};
 
 export default BookForm;

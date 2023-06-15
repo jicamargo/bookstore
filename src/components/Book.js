@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Book({ title, author, onDelete }) {
   return (
@@ -9,5 +10,13 @@ function Book({ title, author, onDelete }) {
     </div>
   );
 }
+
+// Add props validations
+Book.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired
+};
+
 
 export default Book;
