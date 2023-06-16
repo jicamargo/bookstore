@@ -19,8 +19,8 @@ function Home() {
   };
 
   const handleAddBook = (book) => {
-    book.id = uuid();
-    setBooks((prevBooks) => [...prevBooks, book]);
+    const newBook = { ...book, id: uuid() };
+    setBooks((prevBooks) => [...prevBooks, newBook]);
   };
 
   return (
