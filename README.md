@@ -1,6 +1,3 @@
-Sure! Here's the README.md file for the "bookstore" React project:
-
-```markdown
 <a name="readme-top"></a>
 
 <div align="center">
