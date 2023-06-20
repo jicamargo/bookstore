@@ -1,33 +1,34 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+// import PropTypes from 'prop-types';
+// import { v4 as uuid } from 'uuid';
+import Book from './Book';
 
-const BookList = ({ books, onDelete }) => (
-  <div>
-    <h2>Book List</h2>
-    <ul>
-      {books.map((book) => (
-        <li key={book.id}>
-          {book.title}
-          {' '}
-          -
-          {book.author}
-          {' '}
-          <button type="button" onClick={() => onDelete(book.id)}>Delete</button>
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+const BookList = () => {
+  const books = useSelector((state) => state.books);
+  // const dispatch = useDispatch();
 
-BookList.propTypes = {
-  books: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-  onDelete: PropTypes.func.isRequired,
+  if (books.length === 0) {
+    return (
+      <section className="bookList">
+        <header>
+          <h2>Book List</h2>
+          <p>No books to read</p>
+        </header>
+      </section>
+    );
+  }
+
+  return (
+    <section className="bookList">
+      <header>
+        <h2>Book List</h2>
+      </header>
+      <div>
+        {books.map((book) => <Book key={book.itemId} book={book} />)}
+      </div>
+    </section>
+  );
 };
 
 export default BookList;
