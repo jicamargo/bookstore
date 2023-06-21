@@ -21,7 +21,7 @@ function Book({ book }) {
             type="button"
             className="removeBtn"
             onClick={() => {
-              dispatch(removeBook(book.itemId));
+              dispatch(removeBook({ item_id: book.item_id }));
             }}
           >
             Delete
@@ -40,7 +40,7 @@ function Book({ book }) {
 
 Book.propTypes = {
   book: PropTypes.shape({
-    itemId: PropTypes.string.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,

@@ -1,12 +1,18 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-// import PropTypes from 'prop-types';
-// import { v4 as uuid } from 'uuid';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchBooks } from '../redux/books/booksSlice';
+
 import Book from './Book';
 
 const BookList = () => {
+  const dispatch = useDispatch();
+
+  // load books from API on component mount
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+
   const books = useSelector((state) => state.books);
-  // const dispatch = useDispatch();
 
   if (books.length === 0) {
     return (
@@ -25,7 +31,7 @@ const BookList = () => {
         <h2>Book List</h2>
       </header>
       <div>
-        {books.map((book) => <Book key={book.itemId} book={book} />)}
+        {books.map((book) => <Book key={book.item_id} book={book} />)}
       </div>
     </section>
   );
