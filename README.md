@@ -12,8 +12,8 @@
 # 📗 Table of Contents
 
 - [📖 Description](#description)
-- 🌟 [Features](#️features)
-- 🚀 [Future Features](#️future)
+- [Features](#️features)
+- [Future Features](#️future)
 - [💻 Getting Started](#getting-started)
 - [🛠 Technologies Used](#technologies-used)
 - [👥 Authors](#-authors-)
