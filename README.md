@@ -13,6 +13,7 @@
 
 - [📖 Description](#description)
 - [⭐️ Features](#️app-features)
+- [⭐️ Future Features](#️app-future-features)
 - [💻 Getting Started](#getting-started)
 - [🛠 Technologies Used](#technologies-used)
 - [👥 Authors](#-authors-)
@@ -34,6 +35,14 @@ The Bookstore is a React application that allows users to manage and display a c
 - Add Books: Users can add new books to the collection by providing the book title and author.
 - Delete Books: Users can delete books from the collection by selecting the book to delete.
 - View Book List: Users can view the list of books with their titles and authors.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+## ⭐️ Future Features <a name="app-future-features"></a>
+
+- Conection to API: Data will be fetched from an API.
+- Profesional styling that matches Zeplin's design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,7 +110,6 @@ npm run build
 
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
-
 
 
 Contributions are welcome! If you have any ideas, improvements, or bug fixes, please open an issue or submit a pull request. For major changes, please discuss them with the project maintainers first.
