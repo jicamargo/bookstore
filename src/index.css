@@ -15,3 +15,86 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.nav-container {
+  display: flex;
+
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  background-color: #e0e2e7;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.bookList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.bookForm-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #e0e2e7;
+  border-radius: 5px;
+}
+
+.bookItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #e0e2e7;
+  border-radius: 5px;
+}
+
+.bookItem-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookItem-right,
+.bookItem-middle {
+  color: #fdfeff;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0;
+}
+
+.removeBtn {
+  background-color: #e0e2e7;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
