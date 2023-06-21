@@ -13,7 +13,7 @@
 
 - [📖 Description](#description)
 - [⭐️ Features](#️app-features)
-- [⭐️ Future Features](#️app-future-features)
+- [⭐️ Future Features](#️app-future)
 - [💻 Getting Started](#getting-started)
 - [🛠 Technologies Used](#technologies-used)
 - [👥 Authors](#-authors-)
@@ -39,7 +39,7 @@ The Bookstore is a React application that allows users to manage and display a c
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-## ⭐️ Future Features <a name="app-future-features"></a>
+## ⭐️ Future Features <a name="app-future"></a>
 
 - Conection to API: Data will be fetched from an API.
 - Profesional styling that matches Zeplin's design.
