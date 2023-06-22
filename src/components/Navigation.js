@@ -4,11 +4,11 @@ import { UserIcon } from '../icons';
 
 function Navigation() {
   return (
-    <nav className="nav-bar panel-bg">
+    <nav className="panel-bg">
       <div className="nav-header">
         <span className="Bookstore-CMS Text-Style-3">Bookstore CMS</span>
       </div>
-      <nav>
+      <nav className="nav-menu-and-user">
         <ul className="nav-menu">
           <li>
             <Link to="/" className="BOOKS Text-Style-6">BOOKS</Link>
@@ -17,12 +17,12 @@ function Navigation() {
             <Link to="/categories" className="CATEGORIES Text-Style-6">CATEGORIES</Link>
           </li>
         </ul>
-      </nav>
-      <div className="oval">
-        <div className="user-icon">
-          <UserIcon />
+        <div className="oval">
+          <div className="user-icon">
+            <UserIcon />
+          </div>
         </div>
-      </div>
+      </nav>
     </nav>
   );
 }
