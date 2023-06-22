@@ -27,12 +27,7 @@ const BookList = () => {
 
   return (
     <section className="bookList">
-      <header>
-        <h2>Book List</h2>
-      </header>
-      <div>
-        {books.map((book) => <Book key={book.item_id} book={book} />)}
-      </div>
+      {books.map((book) => <Book key={book.item_id} book={book} />)}
     </section>
   );
 };

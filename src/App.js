@@ -9,11 +9,13 @@ import Categories from './components/Categories';
 function App() {
   return (
     <BrowserRouter>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
+      <div className="panel-app">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
