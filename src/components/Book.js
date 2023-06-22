@@ -42,16 +42,24 @@ function Book({ book }) {
         <div className="progress-circle" data-percent="15" />
 
         <div className="percent-cnt">
-          <div className="percent-number Text-Style-10">
+          <div className="percent-number Text-Style-2">
             64%
           </div>
-          <div className="percent-completed Text-Style-11">
+          <div className="percent-completed Text-Style-2">
             Completed
           </div>
         </div>
       </div>
       <div className="bookItem-right">
-        .
+        <div className="current-chapter Text-Style-2">
+          Current Chapter
+        </div>
+        <div className="chapter Text-Style-1">
+          Chapter 17
+        </div>
+        <button className="btn-update rectangle-1 Text-Style" type="button">
+          UPDATE PROGRESS
+        </button>
       </div>
     </article>
   );

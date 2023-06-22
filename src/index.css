@@ -18,7 +18,7 @@
 }
 
 .Text-Style {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
@@ -30,7 +30,7 @@
 }
 
 .Text-Style-2 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -41,7 +41,7 @@
 }
 
 .Text-Style-3 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -52,7 +52,7 @@
 }
 
 .Text-Style-4 {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -63,7 +63,7 @@
 }
 
 .Text-Style-5 {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -74,7 +74,7 @@
 }
 
 .Text-Style-6 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -85,7 +85,7 @@
 }
 
 .Text-Style-7 {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -96,7 +96,7 @@
 }
 
 .Text-Style-8 {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -107,7 +107,7 @@
 }
 
 .Text-Style-10 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -118,7 +118,7 @@
 }
 
 .Text-Style-11 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   font-stretch: normal;
@@ -138,23 +138,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 20px;
-}
-
-.bookForm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-}
-
-.bookForm-fields {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  border: 1px solid #e8e8e8 ;
-  border-radius: 4px;
+  padding: 1rem 70px 0 70px;
 }
 
 .bookItem {
@@ -167,6 +151,8 @@
   border-radius: 5px;
   margin-bottom: 1.2rem;
   background-color: var(--white-two);
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .bookItem-left {
@@ -174,15 +160,28 @@
   flex-direction: column;
 }
 
-.bookItem-right,
 .bookItem-middle {
   display: flex;
   align-items: center;
+  padding-right: 1rem;
+  border-right: var(--very-light-pink) 1px solid;
+}
+
+.bookItem-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+  padding-right: 4rem;
 }
 
 .percent-cnt {
   text-align: center;
   padding-left: 1rem;
+}
+
+.percent-number {
+  font-size: 2rem;
 }
 
 .removeBtn {
@@ -201,7 +200,7 @@
   border-radius: 4px;
   box-shadow: 30px 0 60px 0 var(--black-5);
   background-color: var(--white);
-  overflow:auto;
+  overflow: auto;
   scroll-behavior: smooth;
 }
 
@@ -213,14 +212,14 @@
   margin: 0;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: var(--white-two);
-  border-bottom: solid 1px #e8e8e8;  
+  border-bottom: solid 1px #e8e8e8;
 }
 
 .Bookstore-CMS {
   width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -235,7 +234,7 @@
   width: 3.688rem;
   height: 1rem;
   margin: 1.125rem 1.125rem 0.688rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -251,7 +250,7 @@
   height: 1rem;
   margin: 1.125rem 1.125rem 0.688rem 2.563rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -296,7 +295,7 @@
   position: relative;
   width: 5rem;
   height: 1.5rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -323,24 +322,23 @@
 .btn-container-book .btn-book-item::after {
   content: '';
   position: absolute;
-  width: 0px;
+  width: 0;
   height: 100%;
   border: #e8e8e8 1px solid;
   top: 0;
   right: 0;
 }
 
-
 .btn-container-book .btn-book-item:last-child::after {
   display: none;
 }
 
-.btn-container-book .btn-book-item:first-child {
-  padding-left: 0;
-}
-
 .btn-book-item:hover {
   color: var(--azure);
+}
+
+.btn-container-book .btn-book-item:first-child {
+  padding-left: 0;
 }
 
 .btn-book-item:hover::before {
@@ -375,21 +373,90 @@
   position: absolute;
   top: 8%;
   left: 8%;
-  transform: translate(-50%, -50%);
+
+  /* transform: translate(-50%, -50%); */
   width: 84%;
   height: 84%;
   border-radius: 50%;
   background: var(--white-two);
   transform-origin: left center;
   transform: rotate(calc(360deg * var(--percent) / 100));
-  transition: transform 1.5s;
 }
 
-/* Adjust the value of --percent to change the progress */
 .progress-circle[data-percent="15"]::before {
   transform: rotate(360deg);
 }
 
+.current-chapter {
+  padding: 0.5rem 0;
+}
 
+.chapter {
+  padding: 0 0 1rem 0;
+}
 
+.form-title {
+  height: 1.5rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
 
+.add-book-form {
+  padding: 0 70px 40px 70px;
+}
+
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.bookForm-fields {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.rectangle-1 {
+  width: 11.5rem;
+  height: 2.4rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.rectangle-2 {
+  width: 11.5rem;
+  height: 2.813rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.new-book-inputs {
+  padding: 0.813rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: var(--white-two);
+}
+
+.input-title {
+  width: 48%;
+}
+
+.input-author {
+  width: 20%;
+}
+
+.input-btn {
+  width: 17%;
+}
