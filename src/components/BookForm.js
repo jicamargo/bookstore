@@ -18,25 +18,27 @@ function BookForm() {
   };
 
   return (
-    <div className="bookForm">
-      <div className="bookForm-fields">
-        <h2>Add Book</h2>
-        <form onSubmit={handleSubmit}>
+    <div className="add-book-form">
+      <form className="bookForm" onSubmit={handleSubmit}>
+        <h2 className="form-title">ADD NEW BOOK</h2>
+        <div className="bookForm-fields">
           <input
+            className="new-book-inputs input-title Text-Style-2"
             type="text"
             placeholder="Title"
             value={book.title}
             onChange={(e) => setBook({ ...book, title: e.target.value })}
           />
           <input
+            className="new-book-inputs input-author Text-Style-2"
             type="text"
             placeholder="Author"
             value={book.author}
             onChange={(e) => setBook({ ...book, author: e.target.value })}
           />
-          <button type="submit">Add Book</button>
-        </form>
-      </div>
+          <button className="input-btn rectangle-2 Text-Style" type="submit">ADD BOOK</button>
+        </div>
+      </form>
     </div>
   );
 }

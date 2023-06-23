@@ -6,13 +6,24 @@ import Book from './Book';
 
 const BookList = () => {
   const dispatch = useDispatch();
+  const isLoading = useSelector((state) => state.books.loading); // Add a loading state
+  const books = useSelector((state) => state.books.books);
 
   // load books from API on component mount
   useEffect(() => {
     dispatch(fetchBooks());
   }, [dispatch]);
 
-  const books = useSelector((state) => state.books);
+  if (isLoading) { // Display loading message if data is still being fetched
+    return (
+      <section className="bookList">
+        <header>
+          <h2>Book List</h2>
+          <p>Loading...</p>
+        </header>
+      </section>
+    );
+  }
 
   if (books.length === 0) {
     return (
@@ -27,12 +38,7 @@ const BookList = () => {
 
   return (
     <section className="bookList">
-      <header>
-        <h2>Book List</h2>
-      </header>
-      <div>
-        {books.map((book) => <Book key={book.item_id} book={book} />)}
-      </div>
+      {books.map((book) => <Book key={book.item_id} book={book} />)}
     </section>
   );
 };

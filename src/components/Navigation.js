@@ -1,21 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { UserIcon } from '../icons';
 
 function Navigation() {
   return (
-    <nav className="nav-container">
+    <nav className="panel-bg">
       <div className="nav-header">
-        <h1>Bookstore CMS</h1>
+        <span className="Bookstore-CMS Text-Style-3">Bookstore CMS</span>
       </div>
-      <nav>
+      <nav className="nav-menu-and-user">
         <ul className="nav-menu">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="BOOKS Text-Style-6">BOOKS</Link>
           </li>
           <li>
-            <Link to="/categories">Categories</Link>
+            <Link to="/categories" className="CATEGORIES Text-Style-6">CATEGORIES</Link>
           </li>
         </ul>
+        <div className="oval">
+          <div className="user-icon">
+            <UserIcon />
+          </div>
+        </div>
       </nav>
     </nav>
   );
