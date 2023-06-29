@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <br/>
 
-## Available Scripts
+  <h1><b>Bookstore</b></h1>
 
-In the project directory, you can run:
+  <br/>
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+# 📗 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [📖 Description](#description)
+- [🌟 Features](#features)
+- [🚀 Future Features](#future)
+- [💻 Getting Started](#getting-started)
+- [🛠 Technologies Used](#technologies-used)
+- [👥 Authors](#-authors-)
+- [🤝 Contributing](#contributing)
+- [👍 Show your support](#️-show-your-support-)
+- [🙏 Acknowledgments](#-acknowledgments-)
+- [📝 License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- DESCRIPTION -->
+## 📖 Description <a name="description"></a>
 
-### `npm test`
+The Bookstore is a React application that allows users to manage and display a collection of books. It provides features such as adding new books, deleting existing books, and viewing the list of books.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run build`
+<!-- FEATURES -->
+## 🌟 Features <a name="features"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Add Books: Users can add new books to the collection by providing the book title and author.
+- Delete Books: Users can delete books from the collection by selecting the book to delete.
+- View Book List: Users can view the list of books with their titles and authors.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- FUTURE -->
+## 🚀 Future Features <a name="future"></a>
 
-### `npm run eject`
+- Conection to API: Data will be fetched from an API.
+- Profesional styling that matches Zeplin's design.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
+## 💻 Getting Started <a name="getting-started"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To get a local copy of the project up and running, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+Ensure that you have Node.js installed on your machine.
 
-## Learn More
+### Installation
+Clone the repository to your local machine and navigate to the project directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```shell
+git clone https://github.com/jicamargo/bookstore.git
+cd bookstore
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Dependencies
+Install the necessary dependencies using npm.
 
-### Code Splitting
+```shell
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Development
+Start the development server and open the website in your browser.
 
-### Analyzing the Bundle Size
+```shell
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Production
+Build the optimized production-ready bundle.
 
-### Making a Progressive Web App
+```shell
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+<!-- TECHNOLOGIES USED -->
+## 🛠 Technologies Used <a name="technologies-used"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- React: JavaScript library for building user interfaces.
+- HTML: Markup language for creating the structure of web pages.
+- CSS: Styling language for designing the visual presentation of web pages.
+- JavaScript: Programming language for implementing interactive functionality.
 
-### Deployment
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- AUTHORS -->
+## 👥 Authors <a name="authors"></a>
 
-### `npm run build` fails to minify
+### 👤 **Jorge Camargo**  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - GitHub: [@jicamargo](https://github.com/jicamargo)
+  - Twitter: [@ji_camargo](https://twitter.com/ji_camargo)
+  - LinkedIn: [LinkedIn](https://linkedin.com/in/jorgecamargog)
+
+  _Feel free to reach out to me if you have any questions or collaboration opportunities!_
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+## 🤝 Contributing <a name="contributing"></a>
+
+
+Contributions are welcome! If you have any ideas, improvements, or bug fixes, please open an issue or submit a pull request. For major changes, please discuss them with the project maintainers first.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## 👍 Show your support <a name="support"></a>
+
+If you like this project, please give it a ⭐️. Thank you!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- I would like to thank Microverse for this learning opportunity.
+- [Microverse team](https://microverse.org/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+## 📝 License <a name="license"></a>
+
+This project is [MIT licensed](LICENSE).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
